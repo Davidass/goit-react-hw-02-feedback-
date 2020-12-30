@@ -4,17 +4,13 @@ import s from './Statistics.module.css';
 function Statistics(props) {
   const { good, neutral, bad, total, positiveFeedback } = props;
   return (
-    <>
-      {total > 0 && (
-        <ul className={s.list}>
-          <li>Good: {good}</li>
-          <li>Neutral: {neutral}</li>
-          <li>Bad: {bad}</li>
-          <li>Total: {total}</li>
-          <li>Positive Feedback: {positiveFeedback}%</li>
-        </ul>
-      )}
-    </>
+    <ul className={s.list}>
+      <li>Good: {good}</li>
+      <li>Neutral: {neutral}</li>
+      <li>Bad: {bad}</li>
+      <li>Total: {total}</li>
+      <li>Positive Feedback: {positiveFeedback}%</li>
+    </ul>
   );
 }
 
